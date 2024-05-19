@@ -1,0 +1,122 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.jumbotron {
+    background-color: #6c63ff; /* Neon purple background */
+    color: white;
+    border: 2px solid #6c63ff;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #6c63ff !important;
+}
+
+.nav-link {
+    color: #6c63ff !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #f39c12 !important;
+}
+
+#event h2, #event h3, #contact h2 {
+    margin-top: 2rem;
+}
+
+#carouselExampleIndicators .carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+
+.btn-neon {
+    background-color: #6c63ff;
+    border-color: #6c63ff;
+    color: white;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    box-shadow: 0 0 10px #6c63ff, 0 0 20px #6c63ff, 0 0 30px #6c63ff;
+}
+
+.btn-neon:hover {
+    background-color: #f39c12;
+    border-color: #f39c12;
+    box-shadow: 0 0 10px #f39c12, 0 0 20px #f39c12, 0 0 30px #f39c12;
+}
+
+#formAlert {
+    display: none;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+ul.timeline {
+    list-style: none;
+    padding: 0;
+    position: relative;
+}
+
+ul.timeline:before {
+    content: '';
+    background: #6c63ff;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    z-index: 400;
+    transform: translateX(-50%);
+}
+
+ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+ul.timeline > li:before {
+    content: '';
+    background: #6c63ff;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    left: 50%;
+    width: 14px;
+    height: 14px;
+    z-index: 400;
+    transform: translateX(-50%);
+}
+
+ul.timeline > li > div {
+    background: #2c2c2c;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    position: relative;
+    width: calc(50% - 40px);
+    color: white;
+}
+
+ul.timeline > li:nth-child(odd) > div {
+    left: -100%;
+}
+
+ul.timeline > li:nth-child(even) > div {
+    left: 0;
+}
+
+.text-neon {
+    color: #6c63ff;
+    text-shadow: 0 0 5px #6c63ff, 0 0 10px #6c63ff, 0 0 15px #6c63ff;
+}
